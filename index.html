@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            quotes
+        </title>
+    </head>
+    <body style="background: azure;">
+
+        <center><p style="color:black;font-size: 25px;font-family: 'Lucida Sans';padding: 40px;">QUOTES GENERATOR</p></center>
+
+        <center> <button onclick="myfun()">Click me!</button></center>
+        
+            <div>
+                <center>
+            <p class="randomq" id="ran" style="font-family: 'Lucida Sans';font-size: 20px;
+            border: solid;border-width: 2px;color:black;border-color: black;width: 230px;height: 240px;"
+                ></p></center></div>
+
+         <script>
+             var quotes=["good day","have a happy life","hehhehe","gooood"];
+
+            
+             function myfun(){
+                var randonNum=Math.floor(Math.random()*quotes.length);
+                document.getElementById("ran").innerHTML=quotes[randonNum]
+
+             }
+
+
+
+
+         </script>
+        </body>
+    </html>
